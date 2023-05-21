@@ -359,7 +359,7 @@ button {
   height: 90px !important;
 }
 
-.shape_one {
+.shape_1 {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -367,7 +367,7 @@ button {
   left: 115px;
 }
 
-.shape_tow {
+.shape_2 {
   position: absolute;
   width: 120px;
   height: 73px;
@@ -379,10 +379,8 @@ button {
 
 
 /* about start */
-
 .tf__about {
-  padding: 120px 0px;
-  position: relative;
+  padding: 160px;
 }
 
 .tf__about_img {
@@ -414,7 +412,6 @@ button {
   border-radius: 0px 40px 40px 40px !important;
 }
 
-
 .tf__video_tree_img {
   position: absolute;
   width: 170px;
@@ -426,7 +423,6 @@ button {
 .tf__video_tree_img img {
   border-radius: 40px 40px 40px 0px !important;
 }
-
 
 .tf__play_btn {
   position: absolute;
@@ -440,9 +436,6 @@ button {
   bottom: -437px;
   left: 141px;
 }
-
-
-
 
 
 
@@ -488,7 +481,6 @@ button {
   text-transform: capitalize;
 }
 
-
 .tf__about_eax::after {
   position: absolute;
   content: "";
@@ -504,7 +496,6 @@ button {
   -o-border-radius: 40px 40px 0px 40px;
 }
 
-
 .tf__video_shape {
   position: absolute;
   width: 58px;
@@ -512,14 +503,6 @@ button {
   bottom: -515px;
   left: 60px;
 }
-
-
-
-
-
-
-
-
 
 .tf__about_iteam {
   margin-top: 45px;
@@ -555,8 +538,7 @@ button {
   transition: all linear .3s;
 }
 
-
-.shape_six {
+.shape_6 {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -564,7 +546,7 @@ button {
   left: 208px;
 }
 
-.shape_tree {
+.shape_3 {
   position: absolute;
   width: 62px;
   height: 72px;
@@ -572,7 +554,7 @@ button {
   left: 148px;
 }
 
-.shape_five {
+.shape_5 {
   position: absolute;
   width: 70px;
   height: 71px;
@@ -580,12 +562,151 @@ button {
   right: 240px;
 }
 
-.shape_four {
+.shape_4 {
   position: absolute;
   width: 122px;
   height: 130px;
   bottom: 50px;
   right: 310px;
+}
+
+/* about end */
+
+/* service start */
+
+.tf__service {
+  background: url(../images/services_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 160px 0px;
+  position: relative;
+}
+
+.srvice_head {
+  text-align: center;
+  margin-bottom: 84px;
+}
+
+.srvice_head h2 {
+  text-align: center;
+}
+
+.tf__single_service {
+  padding: 15px 15px 40px 15px;
+  background: var(--colorWhite);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__service_img {
+  position: relative;
+}
+
+.tf__service_img img {
+  width: 100%;
+  height: 290px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tf_service_icon {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  background: var(--colorSecondary);
+  color: var(--colorWhite);
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf_service_icon2 {
+  background: var(--colorPrimary);
+}
+
+.tf_service_icon3 {
+  background: #F7588D;
+}
+
+.tf__service_text {
+  margin-top: 50px;
+}
+
+.tf__service_heading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--headingFont);
+  color: var(--colorBlack);
+  text-transform: capitalize;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__single_service:hover .tf__service_heading {
+  color: var(--colorPrimary);
+}
+
+.tf__service_text p {
+  margin: 25px 0px;
+}
+
+.tf__service_link {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--paraFont);
+  color: var(--colorPrimary);
+  text-transform: capitalize;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__service_link:hover {
+  color: var(--colorBlack);
+}
+
+
+.shape_7 {
+  position: absolute;
+  width: 227px;
+  height: 38px;
+  top: 200px;
+  right: 200px;
+}
+
+.shape_8 {
+  position: absolute;
+  width: 57px;
+  height: 65px;
+  top: 195px;
+  left: 461px;
+}
+
+.shape_4 {
+  position: absolute;
+  width: 95px;
+  height: 100px;
+  bottom: 100px;
+  left: 110px;
 }
 
 
@@ -596,23 +717,7 @@ button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* about end */
+/* service end */
 
 
 
