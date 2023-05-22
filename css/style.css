@@ -105,10 +105,22 @@ button {
   font-weight: 700;
   font-family: var(--paraFont);
   color: var(--colorPrimary);
-  border-left: 2px solid var(--colorPrimary);
-  padding-left: 20px;
   text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
 }
+
+.tf__common_heading h5::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 20px;
+  background: var(--colorPrimary);
+}
+
 
 .tf__common_heading h2 {
   text-align: start;
@@ -123,6 +135,15 @@ button {
   text-align: start;
   font-size: 16px;
   margin-top: 22px;
+}
+
+.center_heading {
+  text-align: center;
+  margin-bottom: 84px;
+}
+
+.center_heading h2 {
+  text-align: center;
 }
 
 /* ===========================
@@ -381,6 +402,7 @@ button {
 /* about start */
 .tf__about {
   padding: 160px;
+  position: relative;
 }
 
 .tf__about_img {
@@ -542,15 +564,15 @@ button {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 76px;
-  left: 208px;
+  top: 135px;
+  left: 161px;
 }
 
 .shape_3 {
   position: absolute;
   width: 62px;
   height: 72px;
-  bottom: 118px;
+  bottom: 136px;
   left: 148px;
 }
 
@@ -566,14 +588,13 @@ button {
   position: absolute;
   width: 122px;
   height: 130px;
-  bottom: 50px;
-  right: 310px;
+  bottom: 98px;
+  right: 287px;
 }
 
 /* about end */
 
 /* service start */
-
 .tf__service {
   background: url(../images/services_bg.jpg);
   background-size: cover;
@@ -581,15 +602,6 @@ button {
   background-position: center;
   padding: 160px 0px;
   position: relative;
-}
-
-.srvice_head {
-  text-align: center;
-  margin-bottom: 84px;
-}
-
-.srvice_head h2 {
-  text-align: center;
 }
 
 .tf__single_service {
@@ -684,7 +696,6 @@ button {
   color: var(--colorBlack);
 }
 
-
 .shape_7 {
   position: absolute;
   width: 227px;
@@ -695,13 +706,13 @@ button {
 
 .shape_8 {
   position: absolute;
-  width: 57px;
+  width: 65px;
   height: 65px;
   top: 195px;
   left: 461px;
 }
 
-.shape_4 {
+.shape_9 {
   position: absolute;
   width: 95px;
   height: 100px;
@@ -709,15 +720,36 @@ button {
   left: 110px;
 }
 
-
-
-
-
-
-
-
-
 /* service end */
+
+
+
+
+
+
+/* faq start */
+
+.tf__faq {
+  padding: 160px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* faq end */
 
 
 
