@@ -733,6 +733,88 @@ button {
   padding: 160px 0px;
 }
 
+.tf__faq_rhs {
+  position: relative;
+}
+
+.tf__faq_img::after {
+  position: absolute;
+  content: "";
+  background: var(--colorPrimary);
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__faq_img img {
+  padding: 45px 0px 45px 42px;
+  z-index: 1;
+}
+
+
+
+
+
+.tf__faq_accordion {}
+
+.tf__faq_accordion .accordion-item {
+  margin-bottom: 25px;
+  border: 2px solid var(--colorSecondary);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+.tf__faq_accordion .accordion-item:first-of-type .accordion-button {
+  border: none;
+  border-radius: 0;
+  padding-left: 44px;
+}
+
+
+.tf__faq_accordion .accordion-header .accordion-button {
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--colorBlack);
+  font-family: var(--paraFont);
+}
+
+
+
+
+.tf__faq_accordion .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/Vector-min.png);
+  transform: rotate(180deg);
+}
+
+.tf__faq_accordion .accordion-button::after {
+  position: absolute;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url(../images/Vecto-plusr.png);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  top: 16px;
+  left: 8px;
+}
+
 
 
 
