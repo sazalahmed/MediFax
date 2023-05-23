@@ -728,59 +728,30 @@ button {
 
 
 /* faq start */
-
 .tf__faq {
   padding: 160px 0px;
-}
-
-.tf__faq_rhs {
   position: relative;
 }
 
-.tf__faq_img::after {
-  position: absolute;
-  content: "";
-  background: var(--colorPrimary);
-  width: 200px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.tf__faq_img img {
-  padding: 45px 0px 45px 42px;
-  z-index: 1;
-}
-
-
-
-
-
-.tf__faq_accordion {}
-
 .tf__faq_accordion .accordion-item {
   margin-bottom: 25px;
-  border: 2px solid var(--colorSecondary);
+  border: 1px solid #2ac28e21;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  background: url(../images/accordian_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-.tf__faq_accordion .accordion-item:first-of-type .accordion-button {
+.tf__faq_accordion .accordion-item .accordion-button {
   border: none;
   border-radius: 0;
-  padding-left: 44px;
+  padding-left: 50px;
 }
-
 
 .tf__faq_accordion .accordion-header .accordion-button {
   border: none;
@@ -793,35 +764,110 @@ button {
   font-family: var(--paraFont);
 }
 
-
-
-
 .tf__faq_accordion .accordion-button:not(.collapsed)::after {
   background-image: url(../images/Vector-min.png);
-  transform: rotate(180deg);
 }
 
 .tf__faq_accordion .accordion-button::after {
   position: absolute;
-  flex-shrink: 0;
   width: 20px;
   height: 20px;
-  content: "";
   background-image: url(../images/Vecto-plusr.png);
-  background-repeat: no-repeat;
-  background-size: 1.25rem;
-  transition: transform .2s ease-in-out;
   top: 16px;
-  left: 8px;
+  left: 14px;
+}
+
+.tf__faq_accordion .accordion-body {
+  padding: 30px 30px 30px 50px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+  color: var(--paraColor);
+}
+
+.tf__faq_img::after {
+  position: absolute;
+  content: "";
+  background: var(--colorPrimary);
+  width: 200px;
+  height: 510px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tf__faq_img {
+  padding: 30px 0px 45px 36px;
+  z-index: 1;
+  position: relative;
+}
+
+.tf__faq_img img {
+  border-radius: 10px;
+}
+
+.faq_img_shape1 {
+  position: absolute;
+  width: 26px;
+  height: 52px;
+  top: 5px;
+  right: 108px;
+}
+
+.faq_img_shape2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 11px;
+  right: 88px;
+}
+
+.shape_10 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 270px;
+  left: 220px;
+}
+
+.shape_11 {
+  position: absolute;
+  width: 66px;
+  height: 78px;
+  bottom: 252px;
+  left: 82px;
+}
+
+.shape_12 {
+  position: absolute;
+  width: 55px;
+  height: 41px;
+  top: 180px;
+  left: 431px;
 }
 
 
+.shape_13 {
+  position: absolute;
+  width: 64px;
+  height: 70px;
+  top: 182px;
+  right: 270px;
+}
 
 
-
-
-
-
+.shape_14 {
+  position: absolute;
+  width: 100px;
+  height: 105px;
+  bottom: 200px;
+  right: 85px;
+}
 
 
 
