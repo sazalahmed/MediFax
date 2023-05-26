@@ -378,7 +378,7 @@ button {
   height: 90px !important;
 }
 
-.shape_1 {
+.tf__banner_shape_1 {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -386,7 +386,7 @@ button {
   left: 115px;
 }
 
-.shape_2 {
+.tf__banner_shape_2 {
   position: absolute;
   width: 120px;
   height: 73px;
@@ -553,7 +553,7 @@ button {
   transition: all linear .3s;
 }
 
-.shape_6 {
+.tf__about_shape_1 {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -561,7 +561,7 @@ button {
   left: 193px;
 }
 
-.shape_3 {
+.tf__about_shape_2 {
   position: absolute;
   width: 62px;
   height: 72px;
@@ -569,7 +569,7 @@ button {
   left: 148px;
 }
 
-.shape_5 {
+.tf__about_shape_3 {
   position: absolute;
   width: 70px;
   height: 71px;
@@ -577,7 +577,7 @@ button {
   right: 240px;
 }
 
-.shape_4 {
+.tf__about_shape_4 {
   position: absolute;
   width: 122px;
   height: 130px;
@@ -690,7 +690,7 @@ button {
   color: var(--colorBlack);
 }
 
-.shape_7 {
+.tf__service_shape_1 {
   position: absolute;
   width: 227px;
   height: 38px;
@@ -698,7 +698,7 @@ button {
   right: 200px;
 }
 
-.shape_8 {
+.tf__service_shape_2 {
   position: absolute;
   width: 65px;
   height: 65px;
@@ -706,7 +706,7 @@ button {
   left: 402px;
 }
 
-.shape_9 {
+.tf__service_shape_3 {
   position: absolute;
   width: 95px;
   height: 100px;
@@ -817,7 +817,7 @@ button {
   right: 88px;
 }
 
-.shape_10 {
+.tf__faq_shape_1 {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -825,7 +825,7 @@ button {
   left: 209px;
 }
 
-.shape_11 {
+.tf__faq_shape_2 {
   position: absolute;
   width: 66px;
   height: 78px;
@@ -833,7 +833,7 @@ button {
   left: 82px;
 }
 
-.shape_12 {
+.tf__faq_shape_3 {
   position: absolute;
   width: 55px;
   height: 41px;
@@ -841,7 +841,7 @@ button {
   left: 431px;
 }
 
-.shape_13 {
+.tf__faq_shape_4 {
   position: absolute;
   width: 64px;
   height: 70px;
@@ -849,7 +849,7 @@ button {
   right: 270px;
 }
 
-.shape_14 {
+.tf__faq_shape_5 {
   position: absolute;
   width: 100px;
   height: 105px;
@@ -954,7 +954,7 @@ button {
   color: var(--colorBlack);
 }
 
-.shape_15 {
+.tf__process_shape_1 {
   position: absolute;
   width: 124px;
   height: 66px;
@@ -962,7 +962,7 @@ button {
   left: 211px;
 }
 
-.shape_16 {
+.tf__process_shape_2 {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -970,7 +970,7 @@ button {
   left: 110px;
 }
 
-.shape_17 {
+.tf__process_shape_3 {
   position: absolute;
   width: 115px;
   height: 120px;
@@ -1034,7 +1034,7 @@ button {
   height: 535px;
 }
 
-.shape_18 {
+.tf__appoin_shape_1 {
   position: absolute;
   width: 135px;
   height: 35px;
@@ -1042,7 +1042,7 @@ button {
   left: 710px;
 }
 
-.shape_19 {
+.tf__appoin_shape_2 {
   position: absolute;
   width: 68px;
   height: 78px;
@@ -1050,7 +1050,7 @@ button {
   left: 200px;
 }
 
-.shape_20 {
+.tf__appoin_shape_3 {
   position: absolute;
   width: 89px;
   height: 79px;
@@ -1058,7 +1058,7 @@ button {
   left: 84px;
 }
 
-.shape_21 {
+.tf__appoin_shape_4 {
   position: absolute;
   width: 188px;
   height: 152px;
@@ -1195,7 +1195,7 @@ button {
   right: 33%;
 }
 
-.shape_22 {
+.tf__helpline_1 {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -1203,7 +1203,7 @@ button {
   left: 43%;
 }
 
-.shape_23 {
+.tf__helpline_2 {
   position: absolute;
   width: 58px;
   height: 68px;
@@ -1211,7 +1211,7 @@ button {
   right: 14%;
 }
 
-.shape_24 {
+.tf__helpline_3 {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -1219,7 +1219,7 @@ button {
   right: 973px;
 }
 
-.shape_25 {
+.tf__helpline_4 {
   position: absolute;
   width: 46px;
   height: 52px;
@@ -1227,7 +1227,7 @@ button {
   right: 82px;
 }
 
-.shape_26 {
+.tf__helpline_5 {
   position: absolute;
   width: 86px;
   height: 90px;
@@ -1235,42 +1235,158 @@ button {
   left: 86px;
 }
 
-
-
-
-
 /* helpline end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* team start */
 .tf__team {
   padding: 105px 0px;
+  position: relative;
+}
+
+
+.tf__team_img {
+  width: 306px;
+  height: 308px;
+  position: relative;
+  display: block;
+}
+
+.tf__team_img img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tf__team_overlay {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  opacity: 0;
+  background: #15cc8d52;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s ease;
+  -moz-transition: all linear .3s ease;
+  -ms-transition: all linear .3s ease;
+  -o-transition: all linear .3s ease;
+}
+
+.tf__team_icon {
+  position: absolute;
+  right: 50%;
+  top: 60%;
+  transform: translate(139px, -47px);
+  background: var(--colorPrimary);
+  border-radius: 30px;
+  padding: 5px 0px;
+}
+
+.tf__team_icon li a {
+  margin: 0px 5px;
+  font-size: 17px;
+  color: var(--colorWhite);
+  display: block;
+  border-radius: 5px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+
+.tf__single_team:hover .tf__team_overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.tf__team_designation {
+  display: flex;
+  justify-content: space-between;
+  background: var(--colorSecondary);
+  padding: 25px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__team_text h6 {
+  font-size: 24;
+  font-weight: 600;
+  color: var(--colorWhite);
+}
+
+.tf__team_text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--colorWhite);
+  margin-top: 4px;
+}
+
+.tf__team_designation a {
+  width: 40px;
+  height: 40px;
+  color: var(--colorPrimary);
+  background: var(--colorWhite);
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tf__single_team:hover .tf__team_designation {
+  background: var(--colorPrimary);
+}
+
+.tf__team_shape_1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 12%;
+  left: 23%;
+}
+
+.tf__team_shape_2 {
+  position: absolute;
+  width: 140px;
+  height: 72px;
+  top: 70%;
+  left: 5%;
+}
+
+.tf__team_shape_3 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  bottom: 15%;
+  right: 6%;
+}
+
+.tf__team_shape_4 {
+  position: absolute;
+  width: 205px;
+  height: 165px;
+  top: 17%;
+  right: 4%;
 }
 
 /* team end */
@@ -1287,7 +1403,113 @@ button {
   padding: 105px 0px;
 }
 
+
+
+.tf__single_review {
+  padding: 40px 30px;
+  background: var(--colorWhite);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+
+.tf__review_icon {
+  color: #FFC422;
+  margin-bottom: 20px;
+}
+
+.tf__reviewer_info {
+  margin-top: 25px;
+}
+
+.tf__reviewer_info img {
+  width: 60px !important;
+  height: 60px !important;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tf_reviewer_name {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--paraFont);
+  color: var(--colorBlack);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.review_img_shape {
+  position: absolute;
+  width: 52px;
+  height: 40px;
+  bottom: 46px;
+  right: 22px;
+}
+
+.tf__single_review:hover .tf_reviewer_name {
+  color: var(--colorPrimary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* review end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
