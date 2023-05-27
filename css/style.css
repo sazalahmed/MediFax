@@ -1249,7 +1249,6 @@ button {
   width: 306px;
   height: 308px;
   position: relative;
-  display: block;
 }
 
 .tf__team_img img {
@@ -1401,9 +1400,8 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 105px 0px;
+  position: relative;
 }
-
-
 
 .tf__single_review {
   padding: 40px 30px;
@@ -1462,57 +1460,31 @@ button {
   color: var(--colorPrimary);
 }
 
+.tf__review_shape_1 {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  top: 16%;
+  left: 26%;
+}
 
+.tf__review_shape_2 {
+  position: absolute;
+  width: 96px;
+  height: 102px;
+  bottom: 19%;
+  left: 5%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tf__review_shape_3 {
+  position: absolute;
+  width: 227px;
+  height: 38px;
+  top: 24%;
+  right: 9%;
+}
 
 /* review end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* team start */
@@ -1520,9 +1492,142 @@ button {
   padding: 105px 0px;
 }
 
+.tf__blog_img {
+  height: 260px;
+  position: relative;
+}
+
+.tf__blog_img img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tf__blog_text {
+  padding: 32px 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tf__blog_text .blog_date li {
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--paraColor);
+}
+
+.tf__blog_text .blog_date li i {
+  color: var(--colorPrimary);
+  margin-right: 5px;
+}
+
+.tf__blog_text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 20px 0px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__blog_text_icon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.tf__blog_text_icon .blog_link {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.tf__blog_react li {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--paraColor);
+  margin-left: 15px;
+}
+
+.tf__blog_react li i {
+  margin-right: 5px;
+}
+
+.tf__single_blog:hover .tf__blog_text h4 {
+  color: var(--colorPrimary);
+}
+
+.blog_shape_img1 {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  background: var(--colorSecondary);
+  color: var(--colorWhite);
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.blog_shape_img2 {
+  background: var(--colorPrimary);
+}
+
+.blog_shape_img3 {
+  background: #F7588D;
+}
+
 /* team end */
 
 
+/* footer start */
+
+.tf__footer {
+  background: url(../images/review_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 105px 0px;
+}
+
+
+.tf_footer_logo {
+  width: 182px;
+  height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer end */
 
 
 
