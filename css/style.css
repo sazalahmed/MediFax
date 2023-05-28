@@ -145,6 +145,83 @@ button {
   text-align: center;
 }
 
+
+
+
+
+.tf__breadcrumbs {
+  background: url(../images/review_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 245px 0px 105px;
+  position: relative;
+}
+
+.tf__breadcrumbs h3 {
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.tf__breadcrumbs .breadcrumb {
+  text-align: center;
+  justify-content: center;
+}
+
+.tf__breadcrumbs .breadcrumb li,
+.tf__breadcrumbs .breadcrumb li a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--paraFont);
+  color: var(--paraColor);
+}
+
+.tf__breadcrumbs .breadcrumb li.active {
+  color: var(--colorPrimary);
+}
+
+.tf__breadcrumb_shape_1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 48%;
+  left: 130px;
+}
+
+.tf__breadcrumb_shape_2 {
+  position: absolute;
+  width: 227px;
+  height: 38px;
+  bottom: 65px;
+  left: 13%;
+}
+
+.tf__breadcrumb_shape_3 {
+  position: absolute;
+  width: 60px;
+  height: 64px;
+  top: 220px;
+  left: 30%;
+}
+
+.tf__breadcrumb_shape_4 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 217px;
+  right: 26%;
+}
+
+.tf__breadcrumb_shape_5 {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  bottom: 67px;
+  right: 8%;
+}
+
 /* ===========================
   COMMON CSS END
 =============================*/
@@ -1301,7 +1378,6 @@ button {
   -o-transition: all linear .3s;
 }
 
-
 .tf__single_team:hover .tf__team_overlay {
   width: 100%;
   height: 100%;
@@ -1389,8 +1465,6 @@ button {
 }
 
 /* team end */
-
-
 
 
 /* review start */
@@ -1487,9 +1561,10 @@ button {
 /* review end */
 
 
-/* team start */
+/* blog start */
 .tf__blog {
   padding: 105px 0px 248px;
+  position: relative;
 }
 
 .tf__blog_img {
@@ -1582,7 +1657,31 @@ button {
   background: #F7588D;
 }
 
-/* team end */
+.tf__blog_shape_1 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 10%;
+  right: 18%;
+}
+
+.tf__blog_shape_2 {
+  position: absolute;
+  width: 95px;
+  height: 102px;
+  bottom: 23%;
+  right: 5%;
+}
+
+.tf__blog_shape_3 {
+  position: absolute;
+  width: 78px;
+  height: 92px;
+  bottom: 38%;
+  left: 6%;
+}
+
+/* blog end */
 
 
 /* footer start */
@@ -1723,11 +1822,11 @@ button {
 }
 
 .tf__subscription {
-  background: url(../images/services_bg.jpg);
+  background: url(../images/subscrib_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0px;
+  padding: 50px 50px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -1766,41 +1865,31 @@ button {
   right: 10px;
 }
 
+.tf__footer_shape_1 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  bottom: 58%;
+  left: 5%;
+}
+
+.tf__footer_shape_2 {
+  position: absolute;
+  width: 66px;
+  height: 75px;
+  top: 30%;
+  right: 9%;
+}
+
+.tf__subscrive_shape {
+  position: absolute;
+  width: 82px;
+  height: 38px;
+  top: 72px;
+  left: 585px;
+}
+
 /* footer end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* team start */
-/* team end */
 
 /* ===========================
   HOME PAGE END
