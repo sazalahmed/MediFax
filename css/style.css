@@ -672,7 +672,7 @@ button {
 }
 
 .tf__single_service {
-  padding: 15px 15px 40px 15px;
+  padding: 21px 21px 23px 21px;
   background: var(--colorWhite);
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -738,12 +738,12 @@ button {
   -o-transition: all linear .3s;
 }
 
-.tf__single_service:hover .tf__service_heading {
+.tf__service_heading:hover {
   color: var(--colorPrimary);
 }
 
 .tf__service_text p {
-  margin: 25px 0px;
+  margin: 17px 0px;
 }
 
 .tf__service_link {
@@ -952,7 +952,7 @@ button {
   text-align: center;
   line-height: 70px;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .tf__process_shape {
@@ -1007,7 +1007,7 @@ button {
 }
 
 .tf__single_process p {
-  margin: 25px 0px;
+  margin: 18px 0px 20px;
 }
 
 .tf__preocess_link {
@@ -1349,13 +1349,19 @@ button {
 
 .tf__team_icon {
   position: absolute;
-  right: 50%;
-  top: 60%;
-  transform: translate(139px, -47px);
+  bottom: 20px;
+  right: -67px;
   background: var(--colorPrimary);
   border-radius: 30px;
   padding: 5px 0px;
+  opacity: 0;
 }
+
+.tf__single_team:hover .tf__team_icon {
+  right: 20px;
+  opacity: 1;
+}
+
 
 .tf__team_icon li a {
   margin: 0px 5px;
@@ -1372,6 +1378,10 @@ button {
   -moz-transition: all linear .3s;
   -ms-transition: all linear .3s;
   -o-transition: all linear .3s;
+}
+
+.tf__team_icon li a:hover {
+  color: var(--colorBlack);
 }
 
 .tf__single_team:hover .tf__team_overlay {
@@ -1589,12 +1599,14 @@ button {
 
 .tf__blog_text .blog_date li i {
   color: var(--colorPrimary);
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
-.tf__blog_text h4 {
+.tf__blog_text .blog_heading {
   font-size: 24px;
   font-weight: 600;
+  font-family: var(--headingFont);
+  color: var(--colorBlack);
   text-transform: capitalize;
   margin: 20px 0px;
   transition: all linear .3s;
@@ -1614,6 +1626,16 @@ button {
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
+  color: var(--colorPrimary);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__blog_text_icon .blog_link:hover {
+  color: var(--colorBlack);
 }
 
 .tf__blog_react li {
@@ -1627,7 +1649,7 @@ button {
   margin-right: 5px;
 }
 
-.tf__single_blog:hover .tf__blog_text h4 {
+.blog_heading:hover {
   color: var(--colorPrimary);
 }
 
@@ -1686,7 +1708,6 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 225px;
   position: relative;
 }
 
@@ -1815,6 +1836,15 @@ button {
   font-weight: 400;
   font-family: var(--paraFont);
   color: var(--paraColor);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__copyright ul li a:hover {
+  color: var(--colorPrimary);
 }
 
 .tf__subscription {
@@ -1828,9 +1858,9 @@ button {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  position: absolute;
+  position: relative;
   top: -128px;
-  width: 1295px;
+  width: 100%;
 }
 
 .tf__subscrib_form {
