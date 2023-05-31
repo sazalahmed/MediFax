@@ -2164,35 +2164,15 @@ button {
   text-transform: capitalize;
 }
 
-.tf__contact_form form {
-  margin-top: 40px;
-}
-
-.tf__contact_form form input {
+.tf_contact_maf iframe {
   width: 100%;
-  padding: 12px 20px;
-  border-radius: 5px;
-  border: 1px solid #20426b36;
-  margin-bottom: 25px;
-}
-
-.tf__contact_form form textarea {
-  width: 100%;
-  padding: 12px 20px 90px;
-  border-radius: 5px;
-  border: 1px solid #20426b36;
-  resize: none;
-  margin-bottom: 25px;
-}
-
-.tf__contact_maf iframe {
-  width: 100%;
+  margin-top: 120px;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-
-/* ===========================
-  CONTACT END
-=============================*/
 
 
 
