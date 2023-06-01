@@ -2174,14 +2174,153 @@ button {
   -o-border-radius: 10px;
 }
 
+/* ===========================
+  CONTACT END
+=============================*/
+
+
+
+/* ===========================
+  SIGN_UP START
+=============================*/
+
+.tf__sign_up {
+  padding: 105px 0px 230px;
+}
+
+.tf__sign_up_form {
+  background: url(../images/sign_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 67px 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__sign_up_form_img {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  left: 133px;
+  margin-bottom: 40px;
+}
+
+.tf__sign_up_form_input {
+  width: 100%;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.tf__check_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tf__check_area .form-check-input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
+
+.tf__check_area .form-check {
+  display: flex;
+  align-items: center;
+}
+
+.tf__check_area label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--colorBlack);
+  font-family: var(--paraFont);
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.tf__check_reg_forget {
+  color: var(--colorBlack);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+}
+
+.form_check_btn {
+  width: 100%;
+}
+
+.tf__sign_up_form .tf__or {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--colorBlack);
+  font-family: var(--paraFont);
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+
+.tf__sign_up_form .tf__or::after {
+  position: absolute;
+  content: "";
+  width: 45%;
+  height: 1px;
+  top: 10px;
+  left: 0;
+  background: #00a6fb40;
+}
+
+.tf__sign_up_form .tf__or::before {
+  position: absolute;
+  content: "";
+  width: 45%;
+  height: 1px;
+  top: 10px;
+  right: 0;
+  background: #00a6fb40;
+}
+
+.tf_sign_option {}
+
+.tf__sign_option li {
+  margin: 0px 7px;
+}
+
+.tf_sign_option li a {}
+
+.tf__sign_option li a {
+  width: 134px;
+  height: 52px;
+}
+
+.tf__sign_option li a img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf_new_account {
+  text-align: center;
+  margin-top: 46px;
+}
 
 
 
 
 
-
-
-
+/* ===========================
+  SIGN_UP END
+=============================*/
 
 
 
