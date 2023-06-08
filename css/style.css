@@ -69,6 +69,10 @@ button {
   outline: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 :root {
   --colorPrimary: #00A6FB;
   --colorSecondary: #2AC28E;
@@ -261,6 +265,108 @@ button {
   box-shadow: none;
 }
 
+
+.tf__play_btn {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background: var(--colorPrimary);
+  color: var(--colorWhite) !important;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.tf__play_btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--colorPrimary);
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+  animation: play_animate 1.3s infinite;
+  -webkit-animation: play_animate 1.3s infinite;
+}
+
+@keyframes play_animate {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+  }
+}
+
+@keyframes rotate_animi {
+  form {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom_animi {
+  form {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+
+@keyframes shake_animi {
+  form {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+}
+
 /* ===========================
   COMMON CSS END
 =============================*/
@@ -331,11 +437,12 @@ button {
   line-height: 90px;
 }
 
-.tf__main_menu .collapse .navbar-nav li {
+.tf__main_menu .collapse .navbar-nav .nav-item {
   margin-right: 35px;
+  position: relative;
 }
 
-.tf__main_menu .collapse .navbar-nav li a {
+.tf__main_menu .collapse .navbar-nav .nav-item a {
   font-size: 16px;
   font-family: var(--paraFont);
   font-weight: 400;
@@ -346,11 +453,11 @@ button {
   margin: 0;
 }
 
-.tf__main_menu .collapse .navbar-nav li a:hover {
+.tf__main_menu .collapse .navbar-nav .nav-item a:hover {
   color: var(--colorPrimary);
 }
 
-.tf__main_menu .collapse .navbar-nav li a.active {
+.tf__main_menu .collapse .navbar-nav .nav-item a.active {
   color: var(--colorPrimary);
 }
 
@@ -358,6 +465,79 @@ button {
   font-size: 20px;
   color: var(--colorBlack);
   margin-right: 20px;
+}
+
+.tf__dropdown {
+  position: absolute;
+  width: 230px;
+  top: 115%;
+  left: 0;
+  background: var(--colorWhite);
+  max-height: 450px;
+  overflow: hidden;
+  overflow-y: auto;
+  box-shadow: rgb(0 0 0 / 15%) 0px 4px 14px;
+  padding-left: 0;
+  opacity: 0;
+  z-index: 99;
+  visibility: hidden;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__dropdown::-webkit-scrollbar {
+  background: #fff;
+  width: 5px;
+}
+
+.tf__dropdown::-webkit-scrollbar-thumb {
+  background: var(--colorPrimary);
+}
+
+.tf__dropdown li {
+  margin-left: 0;
+  line-height: 30px;
+}
+
+.tf__dropdown li a {
+  color: var(--colorBlack);
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  text-transform: capitalize;
+  border-bottom: 1px solid #97d56f47;
+  padding: 10px 10px !important;
+  border-left: 1px solid transparent;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__dropdown li a:hover {
+  color: var(--colorBlack) !important;
+  background: #00a6fb30;
+  border-left: 5px solid var(--colorPrimary);
+}
+
+.tf__dropdown li a.active {
+  color: var(--colorBlack) !important;
+  background: rgb(211 228 200 / 46%);
+  border-left: 5px solid var(--colorPrimary);
+}
+
+.tf__dropdown li:last-child a {
+  border-bottom: 0;
+}
+
+.tf__main_menu .nav-item:hover .tf__dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }
 
 /* main manu end */
@@ -460,6 +640,8 @@ button {
   z-index: -1;
   right: -17px;
   top: 207px;
+  animation: rotate_animi linear 30s infinite;
+  -webkit-animation: rotate_animi linear 30s infinite;
 }
 
 .react img {
@@ -500,6 +682,8 @@ button {
   height: 100px;
   top: 222px;
   left: 115px;
+  animation: zoom_animi linear 2s infinite alternate;
+  -webkit-animation: zoom_animi linear 2s infinite alternate;
 }
 
 .tf__banner_shape_2 {
@@ -508,6 +692,8 @@ button {
   height: 73px;
   bottom: 145px;
   left: 110px;
+  animation: shake_animi linear 2s infinite alternate;
+  -webkit-animation: shake_animi linear 2s infinite alternate;
 }
 
 /* banner end */
@@ -517,6 +703,10 @@ button {
 .tf__about {
   padding: 105px;
   position: relative;
+  background: url(../images/About_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tf__about_img {
@@ -544,20 +734,19 @@ button {
   border-radius: 10px;
 }
 
+.tf__about_img_2 .tf__play_btn {
+  top: -205px;
+  left: 132px;
+}
+
 .tf__about_video_shape1 {
   position: absolute;
   width: 80px;
   height: 80px;
   top: 39px;
   right: 96px;
-}
-
-.tf__about_video_shape2 {
-  position: absolute;
-  width: 115px;
-  height: 60px;
-  bottom: -90px;
-  left: 80px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__about_iteam {
@@ -596,34 +785,22 @@ button {
 
 .tf__about_shape_1 {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 60px;
-  left: 193px;
-}
-
-.tf__about_shape_2 {
-  position: absolute;
   width: 62px;
   height: 72px;
   bottom: 136px;
   left: 148px;
+  animation: shake_animi;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
-.tf__about_shape_3 {
-  position: absolute;
-  width: 70px;
-  height: 71px;
-  top: 95px;
-  right: 240px;
-}
-
-.tf__about_shape_4 {
+.tf__about_shape_2 {
   position: absolute;
   width: 122px;
   height: 130px;
   bottom: 98px;
   right: 287px;
+  animation: zoom_animi 1s linear infinite alternate;
+  -webkit-animation: zoom_animi 1s linear infinite alternate;
 }
 
 /* about end */
@@ -737,6 +914,8 @@ button {
   height: 38px;
   top: 116px;
   right: 200px;
+  animation: shake_animi 2s linear infinite alternate;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
 .tf__service_shape_2 {
@@ -745,6 +924,8 @@ button {
   height: 65px;
   top: 131px;
   left: 402px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__service_shape_3 {
@@ -753,6 +934,8 @@ button {
   height: 100px;
   bottom: 100px;
   left: 110px;
+  animation: zoom_animi 1s linear infinite alternate;
+  -webkit-animation: zoom_animi 1s linear infinite alternate;
 }
 
 /* service end */
@@ -760,6 +943,10 @@ button {
 
 /* faq start */
 .tf__faq {
+  background: url(../images/faq_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 105px 0px 80px;
   position: relative;
 }
@@ -842,20 +1029,38 @@ button {
   border-radius: 10px;
 }
 
+.tf__faq_img .tf__play_btn {
+  top: -255px;
+  left: 277px;
+}
+
+.tf__faq_img .tf__play_btn {
+  color: var(--colorPrimary) !important;
+  background: var(--colorWhite);
+}
+
+.tf__faq_img .tf__play_btn::after {
+  background: var(--colorWhite);
+}
+
 .faq_img_shape1 {
   position: absolute;
   width: 26px;
   height: 52px;
   top: 5px;
   right: 108px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .faq_img_shape2 {
   position: absolute;
   width: 50px;
   height: 50px;
-  bottom: 11px;
+  bottom: 64px;
   right: 88px;
+  animation: shake_animi 2s linear infinite alternate;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
 .tf__faq_shape_1 {
@@ -864,38 +1069,8 @@ button {
   height: 44px;
   top: 189px;
   left: 209px;
-}
-
-.tf__faq_shape_2 {
-  position: absolute;
-  width: 66px;
-  height: 78px;
-  bottom: 182px;
-  left: 82px;
-}
-
-.tf__faq_shape_3 {
-  position: absolute;
-  width: 55px;
-  height: 41px;
-  top: 125px;
-  left: 431px;
-}
-
-.tf__faq_shape_4 {
-  position: absolute;
-  width: 64px;
-  height: 70px;
-  top: 182px;
-  right: 270px;
-}
-
-.tf__faq_shape_5 {
-  position: absolute;
-  width: 100px;
-  height: 105px;
-  bottom: 200px;
-  right: 85px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 /* faq end */
@@ -1001,6 +1176,8 @@ button {
   height: 66px;
   top: 142px;
   left: 211px;
+  animation: zoom_animi 2s linear infinite alternate;
+  -webkit-animation: zoom_animi 2s linear infinite alternate;
 }
 
 .tf__process_shape_2 {
@@ -1009,6 +1186,8 @@ button {
   height: 60px;
   bottom: 117px;
   left: 110px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__process_shape_3 {
@@ -1017,6 +1196,8 @@ button {
   height: 120px;
   top: 156px;
   right: 205px;
+  animation: zoom_animi 1s linear infinite alternate;
+  -webkit-animation: zoom_animi 1s linear infinite alternate;
 }
 
 /* process end */
@@ -1024,8 +1205,12 @@ button {
 
 /* appoinment start */
 .tf__appoinment {
-  margin: 170px 0px 105px;
+  padding: 170px 0px 105px;
   position: relative;
+  background-image: url(../images/appoinment_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tf__appoinment_bg {
@@ -1077,34 +1262,22 @@ button {
 
 .tf__appoin_shape_1 {
   position: absolute;
-  width: 135px;
-  height: 35px;
-  top: -98px;
-  left: 710px;
+  width: 68px;
+  height: 78px;
+  top: 100px;
+  left: 200px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__appoin_shape_2 {
   position: absolute;
-  width: 68px;
-  height: 78px;
-  top: -45px;
-  left: 200px;
-}
-
-.tf__appoin_shape_3 {
-  position: absolute;
-  width: 89px;
-  height: 79px;
-  bottom: 35px;
-  left: 84px;
-}
-
-.tf__appoin_shape_4 {
-  position: absolute;
   width: 188px;
   height: 152px;
-  top: 120px;
+  top: 220px;
   right: 60px;
+  animation: shake_animi 2s linear infinite alternate;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
 /* appoinment end */
@@ -1112,7 +1285,7 @@ button {
 
 /* helpline start */
 .tf__helpline {
-  background: url(../images/services_bg.jpg);
+  background: url(../images/helpline_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1234,6 +1407,8 @@ button {
   height: 138px;
   top: 185px;
   right: 33%;
+  animation: zoom_animi 2s linear infinite alternate;
+  -webkit-animation: zoom_animi 2s linear infinite alternate;
 }
 
 .tf__helpline_1 {
@@ -1242,38 +1417,8 @@ button {
   height: 45px;
   top: 52%;
   left: 43%;
-}
-
-.tf__helpline_2 {
-  position: absolute;
-  width: 58px;
-  height: 68px;
-  top: 16%;
-  right: 14%;
-}
-
-.tf__helpline_3 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 55px;
-  right: 973px;
-}
-
-.tf__helpline_4 {
-  position: absolute;
-  width: 46px;
-  height: 52px;
-  bottom: 156px;
-  right: 82px;
-}
-
-.tf__helpline_5 {
-  position: absolute;
-  width: 86px;
-  height: 90px;
-  bottom: 183px;
-  left: 86px;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 /* helpline end */
@@ -1283,8 +1428,11 @@ button {
 .tf__team {
   padding: 105px 0px;
   position: relative;
+  background: url(../images/team_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 .tf__team_img {
   width: 306px;
@@ -1412,14 +1560,8 @@ button {
   height: 50px;
   top: 12%;
   left: 23%;
-}
-
-.tf__team_shape_2 {
-  position: absolute;
-  width: 140px;
-  height: 72px;
-  top: 70%;
-  left: 5%;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__team_shape_3 {
@@ -1428,14 +1570,8 @@ button {
   height: 68px;
   bottom: 15%;
   right: 6%;
-}
-
-.tf__team_shape_4 {
-  position: absolute;
-  width: 205px;
-  height: 165px;
-  top: 17%;
-  right: 4%;
+  animation: zoom_animi 2s linear infinite alternate;
+  -webkit-animation: zoom_animi 2s linear infinite alternate;
 }
 
 /* team end */
@@ -1514,6 +1650,8 @@ button {
   height: 53px;
   top: 16%;
   left: 26%;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__review_shape_2 {
@@ -1522,6 +1660,8 @@ button {
   height: 102px;
   bottom: 19%;
   left: 5%;
+  animation: zoom_animi 1s linear infinite alternate;
+  -webkit-animation: zoom_animi 1s linear infinite alternate;
 }
 
 .tf__review_shape_3 {
@@ -1530,6 +1670,8 @@ button {
   height: 38px;
   top: 24%;
   right: 9%;
+  animation: shake_animi 2s linear infinite alternate;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
 /* review end */
@@ -1649,6 +1791,8 @@ button {
   height: 64px;
   top: 10%;
   right: 18%;
+  animation: shake_animi 2s linear infinite alternate;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
 .tf__blog_shape_2 {
@@ -1657,6 +1801,8 @@ button {
   height: 102px;
   bottom: 23%;
   right: 5%;
+  animation: zoom_animi 2s linear infinite alternate;
+  -webkit-animation: zoom_animi 2s linear infinite alternate;
 }
 
 .tf__blog_shape_3 {
@@ -1665,6 +1811,8 @@ button {
   height: 92px;
   bottom: 38%;
   left: 6%;
+  animation: shake_animi 2s linear infinite alternate;
+  -webkit-animation: shake_animi 2s linear infinite alternate;
 }
 
 /* blog end */
@@ -1816,10 +1964,7 @@ button {
 }
 
 .tf__subscription {
-  background: url(../images/subscrib_bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--colorPrimary);
   padding: 50px 50px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -1865,6 +2010,8 @@ button {
   height: 120px;
   bottom: 58%;
   left: 5%;
+  animation: zoom_animi 1s linear infinite alternate;
+  -webkit-animation: zoom_animi 1s linear infinite alternate;
 }
 
 .tf__footer_shape_2 {
@@ -1873,6 +2020,8 @@ button {
   height: 75px;
   top: 30%;
   right: 9%;
+  animation: rotate_animi 30s linear infinite;
+  -webkit-animation: rotate_animi 30s linear infinite;
 }
 
 .tf__subscrive_shape {
@@ -2497,6 +2646,126 @@ button {
   border: transparent;
 }
 
+/* ===========================
+  GALLARY END
+=============================*/
+
+
+/* ===========================
+  PAYMENT START
+=============================*/
+.tf__payment {
+  padding: 105px 0px 210px;
+}
+
+.tf__payment .modal .modal-dialog {
+  max-width: 700px;
+}
+
+.tf__payment .modal .modal-content {
+  padding: 25px;
+}
+
+.tf__modal_iteam {
+  margin-top: 45px;
+  margin-bottom: 38px;
+}
+
+.tf__modal_iteam li {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--paraFont);
+  position: relative;
+  padding-left: 33px;
+  margin-bottom: 18px;
+}
+
+.tf__modal_iteam li::after {
+  position: absolute;
+  content: "\f00c";
+  color: var(--colorWhite);
+  font-family: var(--paraFont);
+  font-weight: 600;
+  top: 2px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 11px;
+  border-radius: 50%;
+  background: var(--colorPrimary);
+  transition: all linear .3s;
+}
+
+.tf__single_form {
+  margin-bottom: 20px;
+}
+
+.tf__single_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+  color: var(--colorBlack);
+  text-transform: capitalize;
+}
+
+.tf__single_form input,
+.tf__single_form textarea,
+.tf__single_form select {
+  width: 100%;
+  display: block;
+  padding: 14px 20px;
+  border: 1px solid #00000029;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tf__single_form textarea {
+  padding-bottom: 80px;
+  resize: none;
+}
+
+.modal-footer {
+  justify-content: space-between;
+  border-top: 0;
+}
+
+.tf__modal_closs_btn {
+  padding: 10px 20px;
+  color: red;
+  background: #ff000024;
+  border: 2px solid red;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn-secondary:hover {
+  color: red;
+  background: #ff000024;
+  border: 2px solid red;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+/* ===========================
+  PAYMENT END
+=============================*/
+
+
+
 
 
 
@@ -2504,11 +2773,146 @@ button {
 
 
 /* ===========================
-  GALLARY END
+  PRICEING START
 =============================*/
+.tf__priceing {
+  padding: 105px 0px 0px;
+}
+
+.tf__pricieing_tabs {}
+
+.tf__pricieing_tabs .nav-item {}
+
+.tf__pricieing_tabs .nav-item .nav-link {
+  border: 1px solid #2ac28e1c;
+  padding: 15px 40px;
+  background: #00a6fb1f;
+  border-radius: 0;
+}
+
+.tf__pricieing_tabs .nav-item .nav-link.active {
+  background: var(--colorPrimary);
+}
 
 
 
+.tf__pricieing_tab_contant {
+  margin-top: 70px;
+}
+
+
+.tf__single_priceing {
+  padding: 44px 35px 48px 35px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__single_priceing:hover {
+  border: 1px solid var(--colorPrimary);
+  box-shadow: none;
+}
+
+.tf__price_plan {
+  text-align: center;
+}
+
+.tf__price_plan h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.tf__price_plan h5 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.tf__price_plan h5 i {
+  width: 86px;
+  height: 86px;
+  line-height: 86px;
+  font-size: 36px;
+  color: var(--colorPrimary);
+  background: #00a6fb3b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tf__price_plan h2 {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+
+.tf__priceing_condition {
+  margin-top: 34px;
+  margin-bottom: 45px;
+}
+
+.tf__priceing_condition li {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: var(--paraFont);
+  position: relative;
+  padding-left: 33px;
+  margin-bottom: 18px;
+}
+
+.tf__priceing_condition li::after {
+  position: absolute;
+  content: "\f00c";
+  color: #031d3699;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  top: 2px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 11px;
+  border: 1px solid;
+  border-radius: 50%;
+  transition: all linear .3s;
+}
+
+
+.tf__priceing_btn {
+  width: 100%;
+  background: none;
+  color: var(--colorPrimary);
+  border: 1px solid var(--colorPrimary);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__single_priceing:hover .tf__priceing_btn {
+  background: var(--colorPrimary);
+  color: var(--colorWhite);
+
+}
+
+
+
+/* ===========================
+  PRICEING END
+=============================*/
 
 
 
