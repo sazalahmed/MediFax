@@ -1976,6 +1976,18 @@ button:focus {
   width: 100%;
 }
 
+.tf__subscription_heading h5 {
+  color: var(--colorWhite) !important;
+}
+
+.tf__subscription_heading h5::after {
+  background: var(--colorWhite) !important;
+}
+
+.tf__subscription_heading h2 {
+  color: var(--colorWhite) !important;
+}
+
 .tf__subscrib_form {
   position: relative;
   margin-top: 38px;
@@ -2367,10 +2379,6 @@ button:focus {
   border-color: #86b7fe;
   outline: 0;
   box-shadow: none;
-}
-
-.tf__check_area .form-check-input[type=checkbox] {
-  background: none;
 }
 
 .tf__check_area .form-check {
@@ -2776,7 +2784,7 @@ button:focus {
   PRICEING START
 =============================*/
 .tf__priceing {
-  padding: 105px 0px 0px;
+  padding: 105px 0px 50px;
 }
 
 .tf__pricieing_tabs {}
@@ -2905,10 +2913,12 @@ button:focus {
 .tf__single_priceing:hover .tf__priceing_btn {
   background: var(--colorPrimary);
   color: var(--colorWhite);
-
 }
 
-
+.tf__priceing_faq {
+  background: var(--colorWhite);
+  padding: 60px 0px 165px;
+}
 
 /* ===========================
   PRICEING END
@@ -2916,7 +2926,155 @@ button:focus {
 
 
 
+/* ===========================
+  BECOME_DOCTOR START
+=============================*/
+.tf__become_doctor {
+  padding: 105px 0px 235px;
+}
 
+.tf__doctor_contant {
+  border: 1px solid #5e5b5b17;
+  padding: 30px 25px 30px;
+  border-radius: 10px;
+}
+
+.tf__doctor_heading {
+  font-size: 44px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5e5b5b17;
+}
+
+.tf__doctor_text h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  text-transform: capitalize;
+}
+
+.tf__doctor_ruls {
+  margin-top: 25px;
+}
+
+.tf__doctor_ruls li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+  color: var(--paraColor);
+  position: relative;
+  padding-left: 33px;
+  margin-bottom: 15px;
+}
+
+.tf__doctor_ruls li::after {
+  position: absolute;
+  content: "\f00c";
+  color: var(--colorWhite);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  top: 1px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 11px;
+  border-radius: 50%;
+  background: var(--colorPrimary);
+  transition: all linear .3s;
+}
+
+.tf__doctor_form {
+  padding: 30px;
+  border: 1px solid #5e5b5b17;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__doctor_form h5 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: 2px solid #0e0c0c26;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.tf__doctor_form h5::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--colorPrimary);
+}
+
+.tf__doctor_form label {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--paraFont);
+}
+
+.tf__doctor_form input,
+.tf__doctor_form textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #00000026;
+  margin-bottom: 22px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tf__doctor_form textarea {
+  padding-bottom: 70px;
+  resize: none;
+}
+
+.tf__doctor_form .form-check {
+  display: flex;
+  align-items: center;
+}
+
+.tf__doctor_form .form-check .form-check-input {
+  width: 0px;
+  padding: 7px;
+}
+
+.tf__doctor_form .form-check label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--paraColor);
+  font-family: var(--paraFont);
+  margin-top: -12px;
+  margin-left: 7px;
+}
+
+.tf__doctor_form .form-check label a {
+  color: var(--colorBlack);
+  border-bottom: 1px solid var(--colorBlack);
+}
+
+.tf__b_doctor_btn {
+  width: 100%;
+}
+
+/* ===========================
+  BECOME_DOCTOR END
+=============================*/
 
 
 
