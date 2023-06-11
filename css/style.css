@@ -3077,6 +3077,312 @@ button:focus {
 =============================*/
 
 
+/* ===========================
+  SERVICE_DTLS START
+=============================*/
+.tf__service_details {
+  padding: 105px 0px 230px;
+}
+
+.tf__service_dtls_img1 {
+  height: 500px;
+  position: relative;
+}
+
+.tf__service_dtls_img1 img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf_service_dtls_icon {
+  position: absolute;
+  bottom: -30px;
+  right: 46px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 30px;
+  background: var(--colorPrimary);
+  color: var(--colorWhite);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tf_service_dtls_text,
+.tf__service_dtls_img2 {
+  margin-top: 42px;
+}
+
+.tf_service_dtls_text h3 {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.tf__service_dtls_img2 {
+  height: 288px;
+}
+
+.tf__service_dtls_img2 img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__service_dtls_img3 {
+  height: 278px;
+}
+
+.tf__service_dtls_img3 img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf_service_dtls_process {
+  margin-top: 50px;
+}
+
+.tf_service_dtls_process i {
+  font-size: 36px;
+  color: var(--colorPrimary);
+}
+
+.tf_service_dtls_process h5 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tf_service_dtls_link {
+  margin-top: 60px;
+}
+
+.tf_service_pdf_link {
+  color: var(--paraColor) !important;
+  text-align: center;
+  padding: 18px 0px;
+  width: 100%;
+  border: 1px solid #00a6fb12;
+  background: #00a6fb1f;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf_service_pdf_link i {
+  color: var(--colorPrimary);
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.tf_service_pdf_link span {
+  color: var(--colorBlack);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tf_service_pdf_link:hover {
+  color: var(--colorWhite) !important;
+  background: #0c7cb5b5;
+}
+
+.tf_service_pdf_link:hover i {
+  color: var(--colorWhite);
+}
+
+.tf__service_dtls_rightside {
+  border: 1px solid #5c728e3d;
+  border-radius: 10px;
+  padding: 35px 25px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__service_dtls_rightside h5 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: 2px solid #0e0c0c26;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+
+.tf__service_dtls_rightside h5::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--colorPrimary);
+}
+
+.tf__service_dtls_rightside input,
+.tf__service_dtls_rightside select {
+  width: 100%;
+  padding: 10px 0px 10px 12px;
+  border: 1px solid #5c728e3d;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.form-select:focus {
+  border-color: #5c728e3d;
+  box-shadow: none;
+}
+
+.tf__service_dtls_rightside_img {
+  position: relative;
+}
+
+.tf__service_dtls_rightside_img img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__service_dtls_img_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100px 80px;
+  height: 100%;
+  text-align: center;
+  background: #031d36c7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__service_dtls_img_text i {
+  font-size: 36px;
+  color: var(--colorPrimary);
+}
+
+.tf__service_dtls_img_text h3 {
+  font-size: 44px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--colorWhite);
+  margin: 34px 0px 50px;
+}
+
+/* ===========================
+  TEAM_DTLS END
+=============================*/
+
+
+/* ===========================
+  TEAM_DTLS START
+=============================*/
+.tf__team_dtls {
+  padding: 105px 0px 500px;
+}
+
+
+
+.tf__team_dtls_img {
+  height: 362px;
+}
+
+.tf__team_dtls_img img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+.tf__team_dtls_img_text {}
+
+.tf__team_dtls_img_text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--colorPrimary);
+  margin-bottom: 10px;
+}
+
+.tf__team_dtls_img_text h6 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: var(--paraFont);
+  margin-bottom: 20px;
+}
+
+.tf__team_dtls_img_text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--paraFont);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+  TEAM_DTLS END
+=============================*/
+
+
 
 
 
