@@ -3304,10 +3304,8 @@ button:focus {
   TEAM_DTLS START
 =============================*/
 .tf__team_dtls {
-  padding: 105px 0px 500px;
+  padding: 105px 0px 230px;
 }
-
-
 
 .tf__team_dtls_img {
   height: 362px;
@@ -3321,8 +3319,9 @@ button:focus {
   -o-border-radius: 10px;
 }
 
-
-.tf__team_dtls_img_text {}
+.tf__team_dtls_img_text {
+  margin-bottom: 20px;
+}
 
 .tf__team_dtls_img_text h3 {
   font-size: 24px;
@@ -3347,6 +3346,255 @@ button:focus {
   font-family: var(--paraFont);
 }
 
+.tf__team_dtls_img_text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--paraFont);
+  margin-bottom: 10px;
+}
+
+.tf__team_dtls_img_text ul {
+  margin-top: 20px;
+}
+
+.tf__team_dtls_img_text ul li {
+  margin-right: 20px;
+}
+
+.tf__team_dtls_img_text ul li a {
+  font-size: 24px;
+  color: var(--colorBlack);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.tf__team_dtls_img_text ul li a:hover {
+  color: var(--colorPrimary);
+}
+
+.tf__biography {
+  border: 1px solid #5c728e3d;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 33px;
+}
+
+.tf__biography h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 20px 25px;
+  border-bottom: 1px solid #5c728e3d;
+}
+
+.tf__biography_text {
+  padding: 25px;
+}
+
+.tf__biography_text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.tf_team_dtls_review {
+  border: 1px solid #5c728e3d;
+  padding: 35px 30px 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf_team_dtls_review h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.tf__comment_img {
+  width: 90px;
+  height: 90px;
+  margin-right: 25px;
+}
+
+.tf__comment_img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tf__commant_text {
+  width: 89%;
+  border-bottom: 1px solid #5c728e3d;
+  padding-bottom: 12px;
+}
+
+.tf__commant_text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.tf__commant_text h4 span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+}
+
+.tf__commant_text h4 span i {
+  margin-right: 5px;
+}
+
+.tf__commant_text .review_icon {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.tf__commant_text .review_icon i {
+  color: #FFC422;
+}
+
+.tf__comment_reply {
+  color: var(--paraColor) !important;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.tf__comment_reply i {
+  margin-right: 5px;
+}
+
+.review_icon_noncolor {
+  color: #5c728e3d !important;
+}
+
+.tf__team_dtls_submit_form {
+  border: 1px solid #5c728e3d;
+  padding: 35px 30px 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__team_dtls_submit_form h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.tf__team_dtls_submit_form input,
+.tf__team_dtls_submit_form textarea {
+  width: 100%;
+  padding: 10px 0px 10px 12px;
+  border: 1px solid #5c728e3d;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.tf__team_dtls_submit_form textarea {
+  padding-bottom: 60px;
+  resize: none;
+}
+
+.tf__team_dtls_submit_btn {
+  width: 140px;
+}
+
+.tf__service_dtls_form {
+  background: var(--colorPrimary);
+  border-radius: 10px;
+  padding: 35px 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tf__service_dtls_form h5 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--colorWhite);
+  margin-bottom: 30px;
+}
+
+.tf__service_dtls_form input,
+.tf__service_dtls_form select {
+  width: 100%;
+  padding: 10px 0px 10px 12px;
+  background: var(--colorWhite);
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+}
+
+.tf__service_dtls_form_btn {
+  background: var(--colorWhite);
+  color: var(--colorPrimary);
+}
+
+.tf__service_dtls_timeing {
+  border: 1px solid #5c728e3d;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__service_dtls_timeing h5 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-bottom: 2px solid #0e0c0c26;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tf__service_dtls_timeing h5::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--colorPrimary);
+}
+
+.tf__service_dtls_timeing p {
+  color: var(--colorBlack);
+  padding: 12px 0px;
+  border-bottom: 1px solid #5c728e3d;
+}
+
+.tf__service_dtls_timeing .last_date {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ===========================
+  BLOG_DTLS END
+=============================*/
 
 
 
@@ -3355,19 +3603,45 @@ button:focus {
 
 
 
+/* ===========================
+  BLOG_DTLS START
+=============================*/
+.tf__blog_dtls {
+  padding: 105px 0px 230px;
+}
 
 
+.tf__blog_dtls_img {
+  height: 500px;
+}
 
+.tf__blog_dtls_img img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
+.tf__blog_dtls_text {
+  margin-top: 50px;
+}
 
+.tf__blog_dtls_text h3 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
 
-
-
-
-
-
-
-
+.tf__blog_dtls_text h5 {
+  padding: 30px 40px;
+  border-left: 3px solid var(--colorPrimary);
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  background: #00a6fb30;
+}
 
 
 
