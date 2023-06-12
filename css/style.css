@@ -3473,6 +3473,7 @@ button:focus {
   font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
+  margin-right: 10px;
 }
 
 .tf__comment_reply i {
@@ -3598,18 +3599,12 @@ button:focus {
 
 
 
-
-
-
-
-
 /* ===========================
   BLOG_DTLS START
 =============================*/
 .tf__blog_dtls {
   padding: 105px 0px 230px;
 }
-
 
 .tf__blog_dtls_img {
   height: 500px;
@@ -3623,8 +3618,36 @@ button:focus {
   -o-border-radius: 10px;
 }
 
+.tf__blog_small_text {
+  margin-top: 35px;
+}
+
+.tf__blog_small_text_left li {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+  margin-right: 30px;
+}
+
+.tf__blog_small_text_left li i {
+  margin-right: 5px !important;
+  color: var(--colorPrimary);
+}
+
+.tf__blog_small_text_right li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--paraFont);
+  color: var(--paraColor);
+  margin-left: 12px;
+}
+
+.tf__blog_small_text_right li i {
+  margin-right: 5px;
+}
+
 .tf__blog_dtls_text {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .tf__blog_dtls_text h3 {
@@ -3641,16 +3664,124 @@ button:focus {
   font-weight: 500;
   font-style: italic;
   background: #00a6fb30;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
+.tf__blog_share_area {
+  margin-top: 45px;
+  border-bottom: 1px solid #5c728e3b;
+  padding-bottom: 20px;
+}
 
+.tf__blog_tags li {
+  margin-right: 10px;
+}
 
+.tf__blog_tags li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paraColor);
+  padding: 5px 10px;
+  border: 1px solid #5c728e3b;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
 
+.tf__blog_tags li a:hover {
+  border-color: var(--colorPrimary);
+  color: var(--colorPrimary);
+}
 
+.tf__blog_dtls_shear_icon ul li {
+  margin-left: 10px;
+}
 
+.tf__blog_dtls_shear_icon ul li a {
+  color: var(--paraColor);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
 
+.tf__blog_dtls_shear_icon ul li a:hover {
+  color: var(--colorPrimary);
+}
 
+.tf__commant_reply {
+  margin-left: 110px;
+}
 
+.tf__comment_reply.active {
+  color: var(--colorPrimary) !important;
+}
+
+.tf__service_dtls_rightside h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.tf__blog_form {
+  position: relative;
+  margin-top: 10px;
+}
+
+.tf___blog_btn {
+  position: absolute;
+  padding: 6px 9px;
+  top: 5px;
+  right: 5px;
+}
+
+.tf__blog_catagoris {
+  border-bottom: 1px solid #5c728e3b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tf__blog_catagoris_last {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.tf__recent_post_img {
+  width: 100px;
+  height: 83px;
+  margin-right: 15px;
+}
+
+.tf__recent_post_img img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__recent_post_text p i {
+  color: var(--colorPrimary);
+  margin-right: 5px;
+}
+
+.tf__recent_post_text h6 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
 
 /* ===========================
   TEAM_DTLS END
