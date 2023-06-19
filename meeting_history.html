@@ -46,14 +46,12 @@
 
 
 
-
     <!--============================
         MAIN MANU START
     ==============================-->
     <nav class="navbar navbar-expand-lg tf__main_menu">
         <div class="container py-0">
-            <a class="navbar-brand" href="index.html"><img src="images/Logo_1.png" alt="logo"
-                    class="img-fluid w-100"></a>
+            <a class="navbar-brand" href="#"><img src="images/Logo_1.png" alt="logo" class="img-fluid w-100"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -62,7 +60,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home +</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home +</a>
                         <ul class="tf__dropdown">
                             <li><a href="">home page 1</a></li>
                             <li><a href="#">home page 2</a></li>
@@ -73,7 +71,7 @@
                         <a class="nav-link" href="about.html">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="service.html">services</a>
+                        <a class="nav-link" href="service.html">services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">doctors</a>
@@ -81,9 +79,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">pages +</a>
                         <ul class="tf__dropdown">
-                            <li><a class="active" href="service_detls.html">Services Details</a></li>
+                            <li><a href="service_detls.html">Services Details</a></li>
                             <li><a href="team_detls.html">Team Details</a></li>
-                            <li><a href="blog_dtls.html">Blog Details</a></li>
+                            <li><a href="blog.html">Blog Details</a></li>
                             <li><a href="gallary.html">Gallery Page</a></li>
                             <li><a href="faq.html">FAQ’s</a></li>
                             <li><a href="sign_in.html">Sign In</a></li>
@@ -118,6 +116,7 @@
 
 
 
+
     <!--============================
         BREADCRUMBS START
     ==============================-->
@@ -130,12 +129,12 @@
             <span class="tf__breadcrumb_shape_5"><img src="images/breadcumb_shape-5.png" class="img-fluid w-100"></span>
             <div class="row">
                 <div class="col-12 text-center">
-                    <h3>Our service</h3>
+                    <h3>User Dashboard</h3>
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item" aria-current="page"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">our team</li>
+                            <li class="breadcrumb-item active">User Dashboard</li>
                         </ol>
                     </nav>
 
@@ -150,183 +149,241 @@
 
 
     <!--============================
-        SERVICE START
+        DASHBOARD START
     ==============================-->
-    <section class="tf__service tf__service_page">
+    <section class="tf__dashboard">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="tf__common_heading center_heading">
-                        <h5>our service</h5>
-                        <h2>our madical service</h2>
+                <div class="col-xl-3">
+                    <div class="tf__user_profile">
+                        <div class="tf__user_profile_img">
+                            <img src="images/user_img.png" alt="user" class=" img-fluid w-100">
+                        </div>
+                        <h4>Addition Smith</h4>
+                        <p>Patient Id : 20220501073345</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 mb-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon"><i class="fas fa-eye"></i></span>
-                            <img src="images/service-1.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Online Monitoring</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 mb-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon tf_service_icon2"><i class="fas fa-heartbeat"></i></span>
-                            <img src="images/service-2.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Holter Heart surgery</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 mb-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon tf_service_icon3"><i class="fad fa-capsules"></i></span>
-                            <img src="images/service-3.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Diagnose & Research</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 mb-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon tf_service_icon2 "><i class="fas fa-eye"></i></span>
-                            <img src="images/service-4.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Online Monitoring</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 mb-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon tf_service_icon4"><i class="fas fa-heartbeat"></i></span>
-                            <img src="images/service-5.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Holter Heart surgery</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 mb-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon"><i class="fad fa-capsules"></i></span>
-                            <img src="images/service-6.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Diagnose & Research</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon tf_service_icon3"><i class="fas fa-eye"></i></span>
-                            <img src="images/service-7.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Online Monitoring</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon"><i class="fas fa-heartbeat"></i></span>
-                            <img src="images/service-8.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Holter Heart surgery</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="tf__single_service">
-                        <div class="tf__service_img">
-                            <span class="tf_service_icon tf_service_icon4"><i class="fad fa-capsules"></i></span>
-                            <img src="images/service-9.jpg" alt="service img" class="img-fluid w-100">
-                        </div>
-                        <div class="tf__service_text">
-                            <a href="#" class="tf__service_heading">Diagnose & Research</a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia officia quaerat
-                                ipsam
-                                hic sunt quaerat!</p>
-                            <a href="#" class="tf__service_link">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div id="tf__pagination">
-                        <nav aria-label="...">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item">
-                                    <span class="page-link"><i class="fad fa-chevron-double-left"></i></span>
-                                </li>
-                                <li class="page-item active" aria-current="page">
-                                    <span class="page-link">01</span>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fad fa-chevron-double-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <ul class="tf__dashboard_iteam">
+                        <li><a href="#">Dashboard<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Appointment<i class="fal fa-angle-right"></i></a></li>
+                        <li><a class="active" href="#">Transaction History<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">My Profile<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Change Password<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Review<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Meeting History<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Upcoming Meeting<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Message<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="#">Logout<i class="fal fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-9">
+                    <div class="tf_dashboard__listing">
+                        <h5>Meeting History</h5>
+                        <div class="tf_dashboard__listing_area">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody class="tf_dashboard__listing_body">
+                                        <tr>
+                                            <th class="sl">
+                                                <p>SL</p>
+                                            </th>
+                                            <th class="patient">
+                                                <p>Patient</p>
+                                            </th>
+
+                                            <th class="time">
+                                                <p>Time</p>
+                                            </th>
+
+                                            <th class="transection_id">
+                                                <p>Transection ID</p>
+                                            </th>
+
+                                            <th class="mh_payment_method">
+                                                <p>Payment Method</p>
+                                            </th>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>1</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Andrea Lomarco</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>05 Jun 2023, 03:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF51568</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Paypal</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>2</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Lucas Swing</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>02 Feb 2023, 05:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF5156889</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Brac bank</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>3</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Marc Twain</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>25 Jun 2023, 02:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF515</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Hand Cash</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>4</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Andrea Lomarco</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>05 Jun 2023, 03:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF51568</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Paypal</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>5</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Lucas Swing</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>02 Feb 2023, 05:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF5156889</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Brac bank</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>6</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Marc Twain</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>25 Jun 2023, 02:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF515</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Hand Cash</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row transection_history">
+                                            <td class="sl">
+                                                <p>7</p>
+                                            </td>
+
+                                            <td class="patient">
+                                                <p>Andrea Lomarco</p>
+                                            </td>
+
+                                            <td class="time">
+                                                <p>05 Jun 2023, 03:50 AM</p>
+                                            </td>
+
+                                            <td class="transection_id">
+                                                <p>#FB1234124OPF51568</p>
+                                            </td>
+
+                                            <td class="mh_payment_method">
+                                                <p>Paypal</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="tf__pagination">
+                                <nav aria-label="...">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <span class="page-link"><i class="fad fa-chevron-double-left"></i></span>
+                                        </li>
+                                        <li class="page-item active" aria-current="page">
+                                            <span class="page-link">01</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i
+                                                    class="fad fa-chevron-double-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!--============================
-        SERVICE END
+        DASHBOARD END
     ==============================-->
+
 
 
     <!--============================
