@@ -2322,6 +2322,18 @@ button:focus {
   text-transform: capitalize;
 }
 
+.tf__contact_img {
+  height: 450px;
+}
+
+.tf__contact_img img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 .tf_contact_maf iframe {
   width: 100%;
   margin-top: 120px;
@@ -3635,8 +3647,15 @@ button:focus {
   margin-right: 30px;
 }
 
+.tf__blog_small_text_left li span {
+  color: var(--colorWhite);
+  background: var(--colorPrimary);
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
 .tf__blog_small_text_left li i {
-  margin-right: 5px !important;
+  margin-right: 10px !important;
   color: var(--colorPrimary);
 }
 
@@ -3648,8 +3667,9 @@ button:focus {
   margin-left: 12px;
 }
 
-.tf__blog_small_text_right li i {
-  margin-right: 5px;
+.tf__blog_small_text_left li i {
+  margin-right: 10px !important;
+  color: var(--colorPrimary);
 }
 
 .tf__blog_dtls_text {
@@ -3825,6 +3845,23 @@ button:focus {
   height: 120px;
   margin: 0 auto;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.tf__profile_camera {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 13px;
+  right: 2px;
+}
+
+.tf__profile_camera img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .tf__user_profile h4 {
@@ -4263,6 +4300,7 @@ button:focus {
   width: 120px;
   height: 120px;
   margin-right: 25px;
+  position: relative;
 }
 
 .tf_profile_info_img img {
@@ -4272,8 +4310,6 @@ button:focus {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
-
 
 .tf__profile_form label {
   display: block;
