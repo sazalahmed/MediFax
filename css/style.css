@@ -4337,6 +4337,84 @@ button:focus {
 
 
 
+.tf__massager_option {
+  border: 1px solid rgba(3, 29, 54, 0.1);
+  width: 308px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__massager_searchbox {
+  padding: 20px;
+  margin-bottom: 10px;
+
+}
+
+.tf__massager_searchbox input {
+  width: 100%;
+  border: 1px solid rgba(3, 29, 54, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__massager_option .nav-link {
+  background: #00a6fb0d;
+  margin-bottom: 10px;
+}
+
+.tf__massager_option .nav-link.active {
+  background: #00a6fb0d;
+  color: var(--colorBlack);
+}
+
+
+.tf__single_massage {
+  padding: 7px 5px;
+}
+
+
+.tf__single_massage_img {
+  width: 55px;
+  height: 55px;
+}
+
+.tf__single_massage_img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tf__single_massage_text {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.tf__single_massage_text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 5px;
+
+}
+
+.tf__single_massage_text p {}
+
+.tf__massage_time {
+  position: absolute;
+  top: 3px;
+  right: -42px;
+  font-size: 13px;
+}
 
 
 
@@ -4344,8 +4422,16 @@ button:focus {
 
 
 
-/* topbar start */
-/* topbar end */
+
+
+
+
+
+
+
+
+
+
 
 /* ===========================
   DASHBOARD END
