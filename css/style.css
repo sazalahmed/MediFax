@@ -4340,6 +4340,7 @@ button:focus {
 .tf__massager_option {
   border: 1px solid rgba(3, 29, 54, 0.1);
   width: 308px;
+  padding-bottom: 35px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -4349,8 +4350,7 @@ button:focus {
 
 .tf__massager_searchbox {
   padding: 20px;
-  margin-bottom: 10px;
-
+  position: relative;
 }
 
 .tf__massager_searchbox input {
@@ -4364,19 +4364,29 @@ button:focus {
   -o-border-radius: 10px;
 }
 
+.tf__massager_searchbox span {
+  position: absolute;
+  top: 28px;
+  right: 35px;
+  font-size: 20px;
+}
+
 .tf__massager_option .nav-link {
-  background: #00a6fb0d;
-  margin-bottom: 10px;
+  background: var(--colorWhite);
+  border: none !important;
+
 }
 
 .tf__massager_option .nav-link.active {
-  background: #00a6fb0d;
+  background: rgba(0, 166, 251, 0.04);
   color: var(--colorBlack);
+  border: 1px solid #00a6fb17;
+  border-radius: 10px;
 }
 
 
 .tf__single_massage {
-  padding: 7px 5px;
+  padding: 4px 5px;
 }
 
 
@@ -4400,21 +4410,159 @@ button:focus {
 }
 
 .tf__single_massage_text h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-align: left;
-  margin-bottom: 5px;
-
+  margin-bottom: 4px;
+  text-transform: capitalize;
 }
 
 .tf__single_massage_text p {}
 
 .tf__massage_time {
   position: absolute;
-  top: 3px;
-  right: -42px;
-  font-size: 13px;
+  top: 1px;
+  right: -36px;
+  font-size: 14px;
 }
+
+
+
+.tf___single_chat {
+  border: 1px solid rgba(3, 29, 54, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.tf__single_chat_top {
+  padding: 20px;
+  border-bottom: 1px solid rgba(3, 29, 54, 0.1);
+  margin-bottom: 100px;
+}
+
+.tf__single_chat_top_left {}
+
+.chat_img {
+  width: 60px;
+  height: 60px;
+}
+
+.chat_name h4 {
+  font-size: 18px;
+}
+
+.chat_name p {
+  font-size: 16px;
+}
+
+.tf__single_chat_top_right p {
+  color: var(--colorBlack);
+}
+
+.tf__single_chat_body {
+  padding: 30px;
+}
+
+.tf__chating_img {
+  width: 67px;
+  height: 50px;
+}
+
+.tf__chating_img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tf__chating_text {
+  margin-left: 30px;
+}
+
+
+.tf__chating_text p {
+  background: rgba(0, 166, 251, 0.04);
+  color: var(--colorBlack);
+  padding: 20px;
+  border: 1px solid var(--colorPrimary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tf__single_chat_bottom {
+  border-top: 1px solid rgba(3, 29, 54, 0.1);
+  position: relative;
+
+}
+
+
+.tf__single_chat_bottom span {
+  position: absolute;
+  top: 42px;
+  left: 38px;
+  font-size: 18px;
+}
+
+.tf__single_chat_bottom input {
+  width: 100%;
+  border: none;
+  padding: 42px 70px 42px 70px;
+}
+
+.tf__massage_btn {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--colorPrimary);
+  color: var(--colorWhite);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
