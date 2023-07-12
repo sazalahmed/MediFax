@@ -165,8 +165,9 @@
                         <p>Patient Id : 20220501073345</p>
                     </div>
                     <ul class="tf__dashboard_iteam">
-                        <li><a class="active" href="dashboard.html">Dashboard<i class="fal fa-angle-right"></i></a></li>
-                        <li><a href="dashboard_appoinment.html">Appointment<i class="fal fa-angle-right"></i></a></li>
+                        <li><a href="dashboard.html">Dashboard<i class="fal fa-angle-right"></i></a></li>
+                        <li><a class="active" href="dashboard_appoinment.html">Appointment<i
+                                    class="fal fa-angle-right"></i></a></li>
                         <li><a href="dashboard_trannsaction_history.html">Transaction History<i
                                     class="fal fa-angle-right"></i></a></li>
                         <li><a href="dashboard_profile.html">My Profile<i class="fal fa-angle-right"></i></a></li>
@@ -183,73 +184,301 @@
                 </div>
 
                 <div class="col-xl-9">
-                    <div class="tf__user_dash">
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="tf__single_user_dash">
-                                    <span><i class="fal fa-heartbeat"></i></span>
-                                    <div class="icon"><i class="fal fa-handshake"></i></div>
-                                    <div class="tf__single_user_dash_text">
-                                        <p>Total Appointment</p>
-                                        <h3>255</h3>
-                                        <p>15 Today</p>
-                                    </div>
-                                </div>
+                    <div class="tf_dashboard__listing">
+                        <h5>Appointment History</h5>
+                        <div class="tf_dashboard__listing_area">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody class="tf_dashboard__listing_body">
+                                        <tr>
+                                            <th class="sn">
+                                                <p>SN</p>
+                                            </th>
+                                            <th class="name">
+                                                <p>Doctor</p>
+                                            </th>
+
+                                            <th class="date">
+                                                <p>Date</p>
+                                            </th>
+
+                                            <th class="chamber">
+                                                <p>Chamber</p>
+                                            </th>
+
+                                            <th class="status">
+                                                <p>Status</p>
+                                            </th>
+
+                                            <th class="edit">
+                                                <p>Action</p>
+                                            </th>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>1</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button>Complete</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>3</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button class="pending_btn">Pending</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>1</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button>Complete</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>3</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button class="pending_btn">Pending</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>1</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button>Complete</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>3</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button class="pending_btn">Pending</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>1</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button>Complete</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>3</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button class="pending_btn">Pending</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="tabile_row">
+                                            <td class="sn">
+                                                <p>1</p>
+                                            </td>
+
+                                            <td class="name">
+                                                <p>Dr. Samuel Bro</p>
+                                                <span>Dental</span>
+                                            </td>
+
+                                            <td class="date">
+                                                <p>05 Jun 2023</p>
+                                                <span class="date_time">4:30 PM</span>
+                                            </td>
+
+                                            <td class="chamber">
+                                                <p>12/3 Mirpur Dhaka Bangladesh</p>
+                                            </td>
+
+                                            <td class="status">
+                                                <button>Complete</button>
+                                            </td>
+
+                                            <td class="edit">
+                                                <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="col-xl-4">
-                                <div class="tf__single_user_dash">
-                                    <span><i class="fal fa-heartbeat"></i></span>
-                                    <div class="icon"><i class="fal fa-user-check"></i></div>
-                                    <div class="tf__single_user_dash_text">
-                                        <p>Done Appointment</p>
-                                        <h3>220</h3>
-                                        <p>12 Today</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="tf__single_user_dash">
-                                    <span><i class="fal fa-heartbeat"></i></span>
-                                    <div class="icon"><i class="fal fa-money-check-edit"></i></div>
-                                    <div class="tf__single_user_dash_text">
-                                        <p>Pending Appointment</p>
-                                        <h3>35</h3>
-                                        <p>5 Today</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="tf__single_user_dash mt-4">
-                                    <span><i class="fal fa-heartbeat"></i></span>
-                                    <div class="icon"><i class="fal fa-envelope-open-dollar"></i></div>
-                                    <div class="tf__single_user_dash_text">
-                                        <p>Total Payment</p>
-                                        <h3>255</h3>
-                                        <p>15 Today</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="tf__single_user_dash mt-4">
-                                    <span><i class="fal fa-heartbeat"></i></span>
-                                    <div class="icon"><i class="fal fa-stars"></i></div>
-                                    <div class="tf__single_user_dash_text">
-                                        <p>Total Review</p>
-                                        <h3>220</h3>
-                                        <p>5 Today</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="tf__single_user_dash mt-4">
-                                    <span><i class="fal fa-heartbeat"></i></span>
-                                    <div class="icon"><i class="fab fa-galactic-senate"></i></div>
-                                    <div class="tf__single_user_dash_text">
-                                        <p>Any One</p>
-                                        <h3>35</h3>
-                                        <p>5 Today</p>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="tf__pagination">
+                                <nav aria-label="...">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <span class="page-link"><i class="fad fa-chevron-double-left"></i></span>
+                                        </li>
+                                        <li class="page-item active" aria-current="page">
+                                            <span class="page-link">01</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#"><i
+                                                    class="fad fa-chevron-double-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
