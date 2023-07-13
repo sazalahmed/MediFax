@@ -652,14 +652,14 @@ button:focus {
   color: var(--colorWhite);
 }
 
+.tf__appoinment_form form input[type=date],
 .tf__appintment_modal_form input[type=date] {
   text-transform: uppercase;
 }
 
+.tf__appintment_modal_form .select2-container,
 .tf__appintment_modal_form .reservation_input {
   margin-bottom: 20px;
-  /* border: 1px solid #E4E7E9; */
-  /* text-transform: capitalize; */
 }
 
 .tf__appintment_modal_form button {
@@ -680,12 +680,12 @@ button:focus {
 
 /* banner start */
 .tf__banner {
-  background: url(../images/banner_bg.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .tf__banner div {
@@ -830,9 +830,7 @@ button:focus {
 
 /* about start */
 .tf__about {
-
   position: relative;
-  background: url(../images/About_bg.jpg);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -915,21 +913,10 @@ button:focus {
   border-radius: 50%;
   background: var(--colorPrimary);
   transition: all linear .3s;
-}
-
-.tf__about::after {
-  position: absolute;
-  content: "";
-  background: url(../images/shape-4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 122px;
-  height: 130px;
-  bottom: 98px;
-  right: 287px;
-  animation: zoom_animi 1s linear infinite alternate;
-  -webkit-animation: zoom_animi 1s linear infinite alternate;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
 }
 
 /* about end */
@@ -937,10 +924,9 @@ button:focus {
 
 /* service start */
 .tf__service {
-  background: url(../images/services_bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   position: relative;
 }
 
@@ -1037,51 +1023,19 @@ button:focus {
   color: var(--colorBlack);
 }
 
-.tf__service_shape_1 {
-  position: absolute;
-  width: 227px;
-  height: 38px;
-  top: 116px;
-  right: 200px;
-  animation: shake_animi 2s linear infinite alternate;
-  -webkit-animation: shake_animi 2s linear infinite alternate;
-}
-
-.tf__service_shape_2 {
-  position: absolute;
-  width: 65px;
-  height: 65px;
-  top: 131px;
-  left: 402px;
-  animation: rotate_animi 30s linear infinite;
-  -webkit-animation: rotate_animi 30s linear infinite;
-}
-
-.tf__service_shape_3 {
-  position: absolute;
-  width: 95px;
-  height: 100px;
-  bottom: 100px;
-  left: 110px;
-  animation: zoom_animi 1s linear infinite alternate;
-  -webkit-animation: zoom_animi 1s linear infinite alternate;
-}
-
 /* service end */
 
 
 /* faq start */
 .tf__faq {
-  background: url(../images/faq_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 105px 0px 80px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   position: relative;
 }
 
 .tf__faq_accordion .accordion-item {
-  margin-bottom: 25px;
+  margin-top: 25px;
   border: 1px solid #2ac28e21;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1096,8 +1050,8 @@ button:focus {
 
 .tf__faq_accordion .accordion-item .accordion-button {
   border: none;
-  border-radius: 0;
-  padding-left: 50px;
+  /* border-radius: 0; */
+  /* padding-left: 50px; */
 }
 
 .tf__faq_accordion .accordion-header .accordion-button {
@@ -1109,6 +1063,8 @@ button:focus {
   font-weight: 500;
   color: var(--colorBlack);
   font-family: var(--paraFont);
+  /* border-bottom: 1px solid #2ac28e21; */
+  padding-left: 50px;
 }
 
 .tf__faq_accordion .accordion-button:not(.collapsed)::after {
@@ -1125,11 +1081,12 @@ button:focus {
 }
 
 .tf__faq_accordion .accordion-body {
-  padding: 30px 30px 30px 50px;
+  padding: 20px 20px 20px 50px;
   font-size: 16px;
   font-weight: 400;
   font-family: var(--paraFont);
   color: var(--paraColor);
+  border-top: 1px solid #2ac28e21;
 }
 
 .tf__faq_img::after {
@@ -1137,21 +1094,19 @@ button:focus {
   content: "";
   background: var(--colorPrimary);
   width: 200px;
-  height: 510px;
+  height: 100%;
   top: 0;
   left: 0;
+  border-radius: 10px;
   z-index: -1;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 .tf__faq_img {
-  padding: 30px 0px 45px 36px;
+  padding: 25px 0px 25px 25px;
   z-index: 1;
   position: relative;
+  margin-top: 25px;
+  height: 495px;
 }
 
 .tf__faq_img img {
@@ -1172,32 +1127,17 @@ button:focus {
   background: var(--colorWhite);
 }
 
-.faq_img_shape1 {
+.tf__faq::after {
   position: absolute;
-  width: 26px;
-  height: 52px;
-  top: 5px;
-  right: 108px;
-  animation: rotate_animi 30s linear infinite;
-  -webkit-animation: rotate_animi 30s linear infinite;
-}
-
-.faq_img_shape2 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  bottom: 64px;
-  right: 88px;
-  animation: shake_animi 2s linear infinite alternate;
-  -webkit-animation: shake_animi 2s linear infinite alternate;
-}
-
-.tf__faq_shape_1 {
-  position: absolute;
+  content: "";
+  background: url(../images/shape-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 44px;
   height: 44px;
-  top: 189px;
-  left: 209px;
+  top: 40%;
+  left: 7%;
   animation: rotate_animi 30s linear infinite;
   -webkit-animation: rotate_animi 30s linear infinite;
 }
@@ -1207,12 +1147,15 @@ button:focus {
 
 /* process start */
 .tf__process {
-  background: url(../images/work_bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 105px 0px;
+  /* background: url(../images/work_bg.jpg); */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   position: relative;
+}
+
+.tf__single_process {
+  margin-top: 25px;
 }
 
 .tf__single_process h3 {
@@ -1225,23 +1168,32 @@ button:focus {
   line-height: 70px;
   border-radius: 50%;
   margin-bottom: 25px;
+  /* position: relative; */
+  /* z-index: 1; */
 }
 
 .tf__process_shape {
   position: relative;
 }
 
-.tf__process_shape::after {
+.tf__work_process_area {
+  position: relative;
+  z-index: 1;
+}
+
+.tf__work_process_area::after {
   position: absolute;
   content: "";
-  width: 944px;
-  height: 52px;
-  top: 160px;
-  left: 64px;
+  width: 1000px;
+  /* width: 100%; */
+  height: 65px;
+  top: 20px;
+  left: 50px;
   background-image: url(../images/process_shape.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
 .tf__process_num1 {
@@ -1334,9 +1286,8 @@ button:focus {
 
 /* appoinment start */
 .tf__appoinment {
-  padding: 170px 0px 105px;
   position: relative;
-  background-image: url(../images/appoinment_bg.png);
+  background: var(--colorWhite);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1362,23 +1313,18 @@ button:focus {
 
 .tf__appoinment_form form .form-control,
 .tf__appoinment_form form .form-select {
-  padding: 15px 20px;
+  padding: 13px 20px;
   font-size: 16px;
   color: var(--paraColor);
   background-color: var(--colorWhite);
   border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   box-shadow: none;
 }
 
 .tf__appoinment_btn {
-  padding: 15px 20px;
+  padding: 13px 20px;
   width: 100%;
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 .tf__appoinment_img {
@@ -1414,11 +1360,9 @@ button:focus {
 
 /* helpline start */
 .tf__helpline {
-  background: url(../images/helpline_bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 105px 0px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   position: relative;
 }
 
@@ -1540,8 +1484,13 @@ button:focus {
   -webkit-animation: zoom_animi 2s linear infinite alternate;
 }
 
-.tf__helpline_1 {
+.tf__helpline::after {
   position: absolute;
+  content: "";
+  background: url(../images/shape-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 45px;
   height: 45px;
   top: 52%;
@@ -1554,13 +1503,12 @@ button:focus {
 
 
 /* team start */
-.tf__team {
-  padding: 105px 0px;
-  position: relative;
-  background: url(../images/team_bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.tf__team {}
+
+.tf__single_team {
+  margin-top: 25px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .tf__team_img {
